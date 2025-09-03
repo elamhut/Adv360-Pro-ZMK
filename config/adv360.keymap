@@ -59,6 +59,13 @@
             bindings = <&kp MINUS &kp GREATER_THAN>;
             label = "ARROW_KEY";
         };
+
+        auto_caret: auto_caret {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp CARET>;
+            label = "AUTO_CARET";
+        };
     };
 
     keymap {
@@ -100,11 +107,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                                    &mo 4       &kp F7     &kp F8                &kp F9                 &kp F10       &kp F11    &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                                     &none       &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH      &kp PIPE   &kp HASH
-&trans  &trans  &trans  &trans  &trans  &trans  &none           &trans  &trans    &trans  &trans          &arrow_key  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp AMPS   &kp AT_SIGN
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans    &trans                              &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT   &kp CARET  &kp DOLLAR
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans  &trans  &trans                         &kp EXCLAMATION       &kp QUESTION           &trans        &trans     &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                                    &mo 4       &kp F7     &kp F8                &kp F9                 &kp F10       &kp F11      &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                                     &none       &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH      &kp PIPE     &kp HASH
+&trans  &trans  &trans  &trans  &trans  &trans  &none           &trans  &trans    &trans  &trans          &arrow_key  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp AMPS     &kp AT_SIGN
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans    &trans                              &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT   &auto_caret  &kp DOLLAR
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans  &trans  &trans                         &kp EXCLAMATION       &kp QUESTION           &trans        &trans       &trans
             >;
         };
 
@@ -135,3 +142,4 @@
         };
     };
 };
+

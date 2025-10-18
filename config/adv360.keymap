@@ -89,6 +89,7 @@
             bindings = <&kt CAPSLOCK>;
             key-positions = <46 59>;
             layers = <1>;
+            timeout-ms = <150>;
         };
     };
 

@@ -137,7 +137,7 @@
 &trans  &trans     &trans  &trans  &trans  &trans  &none                                                          &none       &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH      &kp PIPE     &kp HASH
 &trans  &kp GRAVE  &trans  &trans  &trans  &trans  &none          &trans  &trans    &trans  &trans                &arrow_key  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp AMPS     &kp AT_SIGN
 &trans  &trans     &trans  &trans  &trans  &trans                         &trans    &trans                                    &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT   &auto_caret  &kp DOLLAR
-&trans  &trans     &trans  &trans  &trans                 &trans  &trans  &trans    &trans  &trans  &kt CAPSLOCK                         &trans                &trans                 &trans        &trans       &trans
+&trans  &trans     &trans  &trans  &trans                 &trans  &trans  &trans    &trans  &trans  &kp CAPSLOCK                         &trans                &trans                 &trans        &trans       &trans
             >;
         };
 
